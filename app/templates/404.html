@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/drift.css')}}">
+{% endblock %}
+{% block content %}
+    <h3>抱歉，您输入的内容无查询结果，请核对后再试</h3>
+{% endblock %}
+{% block scripts %}
+    {{ super() }}
+    <script src="{{ url_for('static', filename='3rd/remodal.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/book-detail.js') }}"></script>
+{% endblock %}
